@@ -1,5 +1,11 @@
 ## -RedChien--uiuxcafe-dev
 
+# 測試連結
+
+https://boycany.github.io/-RedChien--uiuxcafe-dev/
+
+## 說明
+
 # Card A 、Card B
 
 - 圖片使用 https://picsum.photos/300/200?random=10 此網站產生隨機圖片
