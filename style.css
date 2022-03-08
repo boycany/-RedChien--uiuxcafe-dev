@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(161, 176, 221), rgb(166, 178, 171));
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 100vh;
+}
+
+.container .row {
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 1px beige;
+  border-radius: 25px;
+  width: 35vw;
+  text-align: center;
+  box-shadow: 1px 3px lightgoldenrodyellow;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 576px) {
+  .container .row {
+    width: 50vw;
+  }
+}
+
+.container :hover {
+  transform: scale(1.1);
+}
+
+.container .row a {
+  text-decoration: none;
+  color: bisque;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
