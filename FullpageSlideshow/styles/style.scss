@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+// html {
+//   scroll-behavior: smooth;
+// }
+
+body {
+  font-family: arial, helvetica;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 30px;
+
+  ul {
+    z-index: 70;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 10px 0;
+
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 0 1.1em;
+      }
+    }
+    li :hover {
+      text-decoration: solid underline white 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    justify-content: center;
+    padding: 20px 5px;
+    ul {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  }
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+  }
+  #page1 {
+    background-color: #ff5f45;
+  }
+  #page2 {
+    background-color: #0798ec;
+  }
+  .three {
+    background-color: #fc6c7c;
+  }
+  .four {
+    background-color: #fec401;
+  }
+
+  div.controls {
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%);
+    right: 17px;
+    z-index: 100;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+    ul {
+      list-style: none;
+      li {
+        display: block;
+        width: 14px;
+        height: 13px;
+        margin: 7px;
+        position: relative;
+        a {
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          text-decoration: none;
+
+          span {
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            height: 4px;
+            width: 4px;
+            border: 0;
+            left: 50%;
+            top: 50%;
+            margin: -2px 0 0 -2px;
+            transition: all 0.1s ease-in-out;
+          }
+        }
+        // .controls-link {
+        //   top: -2px;
+        //   right: 60px;
+        //   color: #fff;
+        //   font-size: 14px;
+        //   font-family: arial, helvetica, sans-serif;
+        //   max-width: 220px;
+        //   display: block;
+        //   opacity: 0;
+        //   width: 0;
+        //   position: absolute;
+        //   overflow: hidden;
+        //   white-space: nowrap;
+        // }
+      }
+      li :hover {
+        height: 12px;
+        width: 12px;
+        margin: -6px 0 0 -6px;
+        border-radius: 100%;
+      }
+    }
+  }
+}

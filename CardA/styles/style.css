@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #edf1f5;
+}
+
+div.row {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.row div.col {
+  background-color: white;
+  padding: 2rem;
+}
+
+div.row div.col div.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(211, 211, 211, 0.3);
+          box-shadow: 10px 10px 10px 10px rgba(211, 211, 211, 0.3);
+  border-radius: 0.25rem;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+div.row div.col div.card div.card-body {
+  padding: 1rem;
+}
+
+div.row div.col div.card div.card-body p.card-text {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 601px) {
+  div.row div.col {
+    width: 600px;
+    height: 560px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.row div.col {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

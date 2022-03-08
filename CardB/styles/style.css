@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e2e8f0;
+}
+
+html {
+  line-height: 1.5;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #edf2f7;
+}
+
+div.container {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+div.container div.row {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.container div.row div.column {
+  width: 100%;
+  padding: 1.5rem 0.75rem;
+  max-width: 24rem;
+}
+
+@media screen and (min-width: 1024px) {
+  div.container div.row div.column {
+    width: calc(100 / 3%);
+  }
+}
+
+@media screen and (min-width: 640px) {
+  div.container div.row div.column {
+    width: 50%;
+  }
+}
+
+div.container div.row div.column div.bg-white {
+  -webkit-box-shadow: 0px 20px 10px 5px rgba(211, 211, 211, 0.25);
+          box-shadow: 0px 20px 10px 5px rgba(211, 211, 211, 0.25);
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+div.container div.row div.column div.bg-white div.bg-cover {
+  background-image: url(https://picsum.photos/750/500?random=10);
+  background-size: cover;
+  background-position: center;
+  height: 14rem;
+  padding: 1rem;
+}
+
+div.container div.row div.column div.bg-white div.bg-cover div.icon-like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+div.container div.row div.column div.bg-white div.bg-cover div.icon-like i {
+  color: white;
+  font-size: 1.4rem;
+}
+
+div.container div.row div.column div.bg-white div.information {
+  padding: 1rem;
+}
+
+div.container div.row div.column div.bg-white div.information p.title {
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #4a5568;
+  font-weight: 700;
+}
+
+div.container div.row div.column div.bg-white div.information p.price {
+  font-size: 1.875rem;
+  color: #1a202c;
+}
+
+div.container div.row div.column div.bg-white div.information p.address {
+  color: #4a5568;
+}
+
+div.container div.row div.column div.bg-white div.rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  color: #4a5568;
+  border-color: #e2e8f0;
+  border-top-width: 1px;
+}
+
+div.container div.row div.column div.bg-white div.rooms div.bedroom,
+div.container div.row div.column div.bg-white div.rooms div.bathroom {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+div.container div.row div.column div.bg-white div.rooms div.bedroom i,
+div.container div.row div.column div.bg-white div.rooms div.bathroom i {
+  width: 1.5rem;
+  color: #718096;
+  margin-right: 0.75rem;
+  height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+div.container div.row div.column div.bg-white div.rooms div.bedroom p span,
+div.container div.row div.column div.bg-white div.rooms div.bathroom p span {
+  color: #1a202c;
+  font-weight: 700;
+}
+
+div.container div.row div.column div.bg-white div.realtor-wrapper {
+  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-top-width: 1px;
+  border-color: #e2e8f0;
+  background-color: #f7fafc;
+}
+
+div.container div.row div.column div.bg-white div.realtor-wrapper div.title {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #718096;
+  font-weight: 700;
+}
+
+div.container div.row div.column div.bg-white div.realtor-wrapper div.realtor {
+  padding-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.container div.row div.column div.bg-white div.realtor-wrapper div.realtor div.pic {
+  background-image: url(https://picsum.photos/300/200?random=10);
+  background-size: cover;
+  background-position: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.75rem;
+  border-radius: 9999px;
+}
+
+div.container div.row div.column div.bg-white div.realtor-wrapper div.realtor div.contact-info p.name {
+  color: #1a202c;
+  font-weight: 700;
+}
+
+div.container div.row div.column div.bg-white div.realtor-wrapper div.realtor div.contact-info p.phone {
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+/*# sourceMappingURL=style.css.map */
